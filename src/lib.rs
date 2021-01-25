@@ -1,5 +1,5 @@
 pub fn OwOify(input_text: String, level: OwoLevel) -> String {
-	match level {
+  match level {
     OwoLevel::Low => {
 
       "low return".parse().unwrap()
@@ -28,7 +28,7 @@ mod tests {
 
     #[test]
     fn testowo() {
-	    assert_eq!(OwOify(String::from("hello"), OwoLevel::Low), String::from("low return"));
+      assert_eq!(OwOify(String::from("hello"), OwoLevel::Low), String::from("low return"));
       assert_eq!(OwOify(String::from("hello"), OwoLevel::Medium), String::from("medium return"));
       assert_eq!(OwOify(String::from("hello"), OwoLevel::High), String::from("high return"));
     }
